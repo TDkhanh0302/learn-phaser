@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
-// import GameScene from './scenes/GameScene'
 import Race from './scenes/Race'
+import GameOver from './scenes/GameOver'
 
 const config = {
 	type: Phaser.AUTO,
@@ -13,7 +13,7 @@ const config = {
 		},
 		debug: true
 	},
-	scene: [Race]
+	scene: [Race, GameOver]
 }
 
 export default new Phaser.Game(config)
